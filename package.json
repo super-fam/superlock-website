@@ -2,7 +2,7 @@
   "name": "superlock",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://super-fam.github.io/superlock-website",
+  "homepage": "https://superlock.superfam.app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
