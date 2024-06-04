@@ -76,10 +76,8 @@ const Bottom = () => {
   return (
     <div className="bottom-section">
       <div className="links">
-        <a href="#terms">Terms and Conditions</a>
-        <a href="#privacy">Privacy Policy</a>
-        <a href="#install">Install App</a>
-        <a href="#company">Company Links</a>
+        <a href="https://www.superfam.app/tnc" target="_blank">Terms and Conditions</a>
+        <a href="https://www.superfam.app/privacy" target="_blank">Privacy Policy</a>
       </div>
     </div>
   );
@@ -91,7 +89,7 @@ function App() {
   return (
     <div className="App">
       <TopSection/>
-      <MidHighSection/>
+      {/*<MidHighSection/>*/}
       <Bottom />
 
     </div>
