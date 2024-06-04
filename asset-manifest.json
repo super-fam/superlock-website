@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/superlock-website/static/css/main.31e7b5fd.css",
+    "main.js": "/superlock-website/static/js/main.f854eccb.js",
+    "static/js/453.bcbf1801.chunk.js": "/superlock-website/static/js/453.bcbf1801.chunk.js",
+    "static/media/app_screenshot.avif": "/superlock-website/static/media/app_screenshot.ebf26736177dcc12e6cd.avif",
+    "static/media/iphone.avif": "/superlock-website/static/media/iphone.33da372911e35e79bffe.avif",
+    "static/media/secured-file-3-svgrepo-com.svg": "/superlock-website/static/media/secured-file-3-svgrepo-com.ee24cba1e905e07fd320317c7b42c40c.svg",
+    "index.html": "/superlock-website/index.html",
+    "main.31e7b5fd.css.map": "/superlock-website/static/css/main.31e7b5fd.css.map",
+    "main.f854eccb.js.map": "/superlock-website/static/js/main.f854eccb.js.map",
+    "453.bcbf1801.chunk.js.map": "/superlock-website/static/js/453.bcbf1801.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31e7b5fd.css",
+    "static/js/main.f854eccb.js"
+  ]
+}
