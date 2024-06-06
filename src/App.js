@@ -1,6 +1,5 @@
 import './App.css';
-import appScreenshot from './assets/app_screenshot.avif';
-import appBackground from './assets/iphone.avif';
+import appMockup from './assets/SuperLock_mockup.png';
 import secureFileSvg from './assets/secured-file-3-svgrepo-com.svg';
 
 const TopSection = () => {
@@ -15,16 +14,11 @@ const TopSection = () => {
         </div>
         <div className="store-links">
           {/*<a href="#appstore">App Store</a>*/}
-          <a href="#playstore">Play Store</a>
+          <a href="https://play.google.com/store/apps/details?id=com.superfam.superlock" target="_blank">Play Store</a>
         </div>
       </div>
       <div className="screenshot">
-        <img src={appBackground} alt="App Screenshot" style={{position: "relative", display: "inline"}}/>
-        <img src={appScreenshot} alt="App Screenshot" style={{
-          position: "absolute",
-          bottom: 0,
-          right: 8,
-        }}/>
+        <img src={appMockup} alt="App Mockup"/>
       </div>
     </div>
   </div>;
@@ -84,13 +78,12 @@ const Bottom = () => {
 }
 
 
-
 function App() {
   return (
     <div className="App">
       <TopSection/>
       {/*<MidHighSection/>*/}
-      <Bottom />
+      <Bottom/>
 
     </div>
   );
