@@ -4,24 +4,17 @@ import './index.css';
 import './fonts.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {createBrowserRouter, RouterProvider,} from "react-router-dom";
-import PVC from "./routes/pvc/pvc";
+import {BrowserRouter,} from "react-router-dom";
+import ScrollToTop from "./helpers/ScrollToTop";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App/>,
-  },
-  {
-    path: "/pvc",
-    element: <PVC />
-  }
-]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <BrowserRouter>
+      <ScrollToTop/>
+      <App/>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

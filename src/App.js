@@ -1,7 +1,11 @@
 import './App.css';
 import appMockup from './assets/SuperLock_mockup.png';
 import secureFileSvg from './assets/secured-file-3-svgrepo-com.svg';
-import Footer from "./components/footer";
+import {Route, Routes} from "react-router-dom";
+import Layout from "./components/layout";
+import ErrorPage from "./routes/error";
+import PVC from "./routes/pvc/pvc";
+import React from "react";
 
 const TopSection = () => {
   return <div className="top-section">
@@ -48,15 +52,23 @@ const MidHighSection = () => {
   );
 };
 
-
 function App() {
   return (
-    <div className="App">
-      <TopSection/>
-      {/*<MidHighSection/>*/}
-      <Footer/>
-
-    </div>
+    <Routes>
+      <Route
+        path="/"
+        element={<Layout/>}
+        errorElement={<ErrorPage/>}
+      >
+        <Route errorElement={<ErrorPage/>}>
+          <Route index element={<TopSection/>}/>
+          <Route
+            path="/pvc"
+            element={<PVC/>}
+          />
+        </Route>
+      </Route>
+    </Routes>
   );
 }
 

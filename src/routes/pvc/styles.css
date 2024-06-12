@@ -1,3 +1,7 @@
+* {
+    --policy-text-color: rgb(86, 97, 112);
+}
+
 .policy-container-wrapper {
     margin: 4rem 0;
     display: flex;
@@ -40,7 +44,8 @@
 .policy-header-date {
     font-size: 1.1rem;
     font-weight: bold;
-    color: gray;
+    /*color: gray;*/
+    color: var(--policy-text-color);
 }
 
 .policy-content {
@@ -49,33 +54,44 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: 2rem;
+    line-height: 1.7rem;
+
+    ul {
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+    }
 }
+
 
 .policy-content-section {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: flex-start;
-    gap: 1rem;
+    gap: 1.2rem;
 }
 
-.policy-content ul {
-    padding-left: 20px;
-}
 
 .policy-content-section-title {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 32px;
+    font-weight: 800;
 }
 
 .policy-content-section-text {
-    color: gray;
+    color: var(--policy-text-color);
+
+    /*color: gray;*/
     font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
     display: flex;
     flex-direction: column;
     align-items: start;
-    text-align: justify;
-    gap: 0.5rem;
+    /*text-align: justify;*/
+    gap: 1rem;
 }
 
 .policy-content-section-text h3 {
