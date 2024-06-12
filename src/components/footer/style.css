@@ -1,0 +1,15 @@
+.bottom-section {
+    padding: 20px;
+    background: #004d40;
+    color: #fff;
+}
+
+.links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}

@@ -1,6 +1,7 @@
 import './App.css';
 import appMockup from './assets/SuperLock_mockup.png';
 import secureFileSvg from './assets/secured-file-3-svgrepo-com.svg';
+import Footer from "./components/footer";
 
 const TopSection = () => {
   return <div className="top-section">
@@ -23,25 +24,6 @@ const TopSection = () => {
     </div>
   </div>;
 }
-
-// const MidHighSection = () => {
-//   return (
-//     <div className="mid-high-section">
-//       <div className="card">
-//         <img src={card1} alt="Feature 1" />
-//         <p>Offline Storage</p>
-//       </div>
-//       <div className="card">
-//         <img src={card2} alt="Feature 2" />
-//         <p>Encrypted Backups</p>
-//       </div>
-//       <div className="card">
-//         <img src={card3} alt="Feature 3" />
-//         <p>Easy Sharing</p>
-//       </div>
-//     </div>
-//   );
-// };
 
 const Card = ({imgFile, heading, text}) => {
   return <div className="card">
@@ -66,24 +48,13 @@ const MidHighSection = () => {
   );
 };
 
-const Bottom = () => {
-  return (
-    <div className="bottom-section">
-      <div className="links">
-        <a href="https://www.superfam.app/tnc" target="_blank">Terms and Conditions</a>
-        <a href="https://www.superfam.app/privacy" target="_blank">Privacy Policy</a>
-      </div>
-    </div>
-  );
-}
-
 
 function App() {
   return (
     <div className="App">
       <TopSection/>
       {/*<MidHighSection/>*/}
-      <Bottom/>
+      <Footer/>
 
     </div>
   );

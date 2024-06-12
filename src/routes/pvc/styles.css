@@ -1,0 +1,96 @@
+.policy-container-wrapper {
+    margin: 4rem 0;
+    display: flex;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    font-family: "Inter", "Inter Placeholder", sans-serif;
+}
+
+.policy-container {
+    align-items: flex-start;
+    justify-content: space-evenly;
+    display: flex;
+    gap: 3.5rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 65%;
+}
+
+.policy-container * {
+    margin: 0;
+    padding: 0;
+}
+
+.policy-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+
+}
+
+.policy-header-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.policy-header-date {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: gray;
+}
+
+.policy-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.policy-content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.policy-content ul {
+    padding-left: 20px;
+}
+
+.policy-content-section-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.policy-content-section-text {
+    color: gray;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: justify;
+    gap: 0.5rem;
+}
+
+.policy-content-section-text h3 {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+@media (max-width: 800px) {
+    .policy-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .policy-container {
+        width: 90%;
+    }
+}
